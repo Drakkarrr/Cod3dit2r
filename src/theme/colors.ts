@@ -1,0 +1,15 @@
+export const commonColors = {
+    white: '#ffffff',
+    black: '#000000'
+};
+
+export const defaultColors = {
+    background: commonColors.white,
+    fonts: commonColors.black,
+    primary: '#203040'
+};
+
+export const darkModeColors = {
+    font: commonColors.white,
+    background: '#232B32'
+};
