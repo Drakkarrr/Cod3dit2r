@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const AuthProvider = (props: PropsWithChildren<{}>) => {
   const navigate = useNavigate();
 
-  const onRedirectCallback = (appState: any) => {
+  const onNavigateCallback = (appState: any) => {
     navigate(appState?.returnTo || window.location.pathname);
   };
 
@@ -15,7 +15,7 @@ const AuthProvider = (props: PropsWithChildren<{}>) => {
       domain={appConfig.auth0Domain}
       clientId={appConfig.auth0ClientId}
       redirectUri={window.location.origin}
-      onRedirectCallback={onRedirectCallback}
+      onNavigateCallback={onNavigateCallback}
     >
       {props.children}
     </Auth0Provider>

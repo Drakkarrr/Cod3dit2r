@@ -5,7 +5,7 @@ export const commonColors = {
 
 export const defaultColors = {
     background: commonColors.white,
-    fonts: commonColors.black,
+    font: commonColors.black,
     primary: '#203040'
 };
 

@@ -7,7 +7,7 @@ import store, { persistor } from './store';
 const ReduxProvider: React.FC = (props: PropsWithChildren<{}>) => {
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor} loading={Loading}>
+      <PersistGate persistor={persistor} loading={<Loading />}>
         {props.children}
       </PersistGate>
     </Provider>
