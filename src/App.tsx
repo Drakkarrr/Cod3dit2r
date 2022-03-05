@@ -1,13 +1,14 @@
+import Header from 'components/common/header/Header';
 import React from 'react';
 import Routing from 'routes/Routing';
 
-const App = () => <Routing />;
-// <div className="container">
-//   <nav>
-//     this is nav
-//     <h1>hello nav</h1>
-//   </nav>
-//   <h1>Hello World!</h1>
-// </div>
+function App() {
+  return (
+    <>
+      <Header />
+      <Routing />
+    </>
+  );
+}
 
 export default App;
